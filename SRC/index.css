@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --background: 150 10% 97%;
+    --foreground: 0 0% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+    --primary: 160 62% 15%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 50% 30%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 150 10% 94%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 160 50% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 150 10% 90%;
+    --input: 150 10% 90%;
+    --ring: 160 62% 15%;
+    --chart-1: 160 62% 15%;
+    --chart-2: 160 50% 30%;
+    --chart-3: 150 20% 50%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 160 10% 5%;
+    --foreground: 0 0% 95%;
+    --card: 160 10% 8%;
+    --card-foreground: 0 0% 95%;
+    --popover: 160 10% 8%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 160 50% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 62% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 160 10% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 160 50% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 160 10% 15%;
+    --input: 160 10% 15%;
+    --ring: 160 50% 30%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* --- Premium Visual Enhancements --- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glass style cards */
+.glass-card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Premium gradient headings */
+.gradient-text {
+  background: linear-gradient(90deg,#0f3d2e,#1f7a63,#3bbf9f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button upgrade */
+.btn-premium {
+  background: linear-gradient(135deg,#0f3d2e,#1f7a63);
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Project card hover */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+/* Premium section spacing */
+.section-spacing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Hero gradient background */
+.hero-bg {
+  background: radial-gradient(circle at top,#e9f5f1,transparent 60%);
+}
